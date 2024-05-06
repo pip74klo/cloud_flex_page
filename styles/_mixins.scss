@@ -21,11 +21,12 @@
   }
 }
 
-@mixin font($size: 16, $width: 400, $color: #fff, $style: normal) {
+@mixin font($size: 16, $weight: 400, $color: #fff, $style: normal) {
   font: {
     size: $size;
-    width: $width;
+    weight: $weight;
     style: $style;
+
   }
   color: $color;
 }
