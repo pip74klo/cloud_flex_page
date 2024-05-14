@@ -79,6 +79,7 @@
 
   @media (max-width: v.$media_md) {
     &__title {
+      text-align: center;
       @include m.font(32px, 400, v.$color_black);
     }
   
@@ -86,9 +87,17 @@
     &__email,
     &__text {
       @include m.font(18px, 400, v.$color_black);
+
       &::placeholder {
         @include m.font(18px, 100, v.$color_gray);
       }
+    }
+  }
+
+  @media (max-width: v.$media_min) {
+    &__title {
+      max-width: 350px;
+      text-align: center;
     }
   }
 }
